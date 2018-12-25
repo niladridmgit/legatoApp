@@ -4,7 +4,9 @@ mangOH RED i2c LCD service for pcf8574 lcd 16x2, 20x4
 lcdservice_lcdCmd:
 
 CLEAR_DISPLAY	0x01
+
 LCD_TYPE_16X2   0x02
+
 LCD_TYPE_20X4   0x03
 
 in the code I have already enable i2c lines in RPI header by sending below command to the i2c expander which address is 0x71
