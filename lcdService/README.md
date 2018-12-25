@@ -1,6 +1,6 @@
 mangOH RED i2c LCD service for pcf8574 lcd 16x2, 20x4
 
-![alt text](https://raw.githubusercontent.com/niladridmgit/legatoApp/blob/master/lcdService/i2clcd.png)
+![alt text](https://github.com/niladridmgit/legatoApp/blob/master/lcdService/i2clcd.png)
 
 lcdservice_lcdCmd:
 
