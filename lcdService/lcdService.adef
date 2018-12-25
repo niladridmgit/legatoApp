@@ -1,0 +1,46 @@
+version: 1.0.0
+sandboxed: false
+start: auto
+
+executables:
+{
+    lcdService = (lcdService)
+
+}
+
+processes:
+{
+    run:
+    {
+        (lcdService)
+
+    }
+    envVars:
+    {
+        LE_LOG_LEVEL = INFO
+	
+    }
+    maxCoreDumpFileBytes: 512
+    maxFileBytes: 10240K
+    maxLockedMemoryBytes: 100K
+    faultAction: restart
+}
+
+requires:
+{
+	device:
+    {
+		[rw] /dev/i2c-0 /dev/i2c-0
+    }
+    
+}
+
+extern:
+{
+   lcdservice = lcdService.lcdService.lcdservice
+}
+
+
+maxFileSystemBytes: 10240K
+maxMQueueBytes: 16K
+maxQueuedSignals: 200

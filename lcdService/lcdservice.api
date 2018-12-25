@@ -1,0 +1,18 @@
+FUNCTION le_result_t i2cInit
+(
+    uint8 i2cSlave IN,    
+    string i2cDevice[100] IN 
+);
+
+FUNCTION le_result_t lcdCmd
+(
+    uint8 i2cSlave IN,    
+    uint8 cmd IN 
+);
+
+FUNCTION le_result_t lcdWriteString
+(
+    uint8 line IN,    
+    string writeBytes[100] IN 
+);
+

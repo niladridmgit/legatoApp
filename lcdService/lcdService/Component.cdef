@@ -1,0 +1,12 @@
+sources:
+{
+   lcdService.c
+}
+
+provides:
+{
+    api:
+    {
+        lcdservice = lcdservice.api
+    }
+}
