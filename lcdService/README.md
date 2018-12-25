@@ -1,6 +1,8 @@
 mangOH RED i2c LCD service for pcf8574 lcd 16x2, 20x4
 
 
+
+
 lcdservice_lcdCmd:
 
 CLEAR_DISPLAY	0x01
@@ -22,6 +24,6 @@ if your pcf8574 i2c address is 0x27
 
 3. lcdservice_lcdCmd(0x27,0x02); // LCD_TYPE_16X2 
 
-4. lcdservice_lcdWriteString(1, "Hello"); // write string at 1st line
+4. lcdservice_lcdWriteString(1, "Hello"); // write string in 1st line
 
-5. lcdservice_lcdWriteString(1, "World"); // write string at 2nd line
+5. lcdservice_lcdWriteString(1, "World"); // write string in 2nd line
