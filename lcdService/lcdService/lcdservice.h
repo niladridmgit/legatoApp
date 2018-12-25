@@ -35,7 +35,7 @@
 static int i2cFile;
 static uint8_t LCD_MAXCHAR_LINE = 20;
 
-static const char I2C_BUS[12]= "/dev/i2c-0" // I2C bus device
+static const char I2C_BUS[12]= "/dev/i2c-0"; // I2C bus device
 static char i2cBus[100]="\0";
 
 void lcd_writeString(const char *ptrChr, unsigned int str_size, unsigned char line);
