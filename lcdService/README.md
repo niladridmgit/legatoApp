@@ -9,7 +9,7 @@ LCD_TYPE_16X2   0x02
 
 LCD_TYPE_20X4   0x03
 
-in the code I have already enable i2c lines in RPI header by sending below command to the i2c expander which address is 0x71
+in the code I have already enabled i2c lines in RPI header by sending below command to the i2c expander which address is 0x71
  >i2cset -y 0 0x71 0x08
 
 Use below apis to play with i2c LCD
